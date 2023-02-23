@@ -90,9 +90,9 @@ class Images extends Component {
         {Boolean(images.length) && images.length !== this.state.totalHits && (
           <LoadMore loadmore={this.loadMore} />
         )}
-        {Boolean(images.length) &&
-          images.length === this.state.totalHits &&
-          Notiflix.Notify.success('The end')}
+        {Boolean(images.length) && images.length === this.state.totalHits && (
+          <p>The end...</p>
+        )}
       </>
     );
   }
